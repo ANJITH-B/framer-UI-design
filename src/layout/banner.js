@@ -1,4 +1,4 @@
-import { Box, HStack } from '@chakra-ui/react'
+import { Box, HStack, VStack } from '@chakra-ui/react'
 import React from 'react'
 import BannerLeft from '../components/banner/bannerLeft'
 import BannerRigh from '../components/banner/bannerRigh'
@@ -13,8 +13,18 @@ const Banner = () => {
                     <BannerLeft />
                 </Box >
                 <Box w={'50vw'} h={'80vh'} m={0}>
-                    <Box pt={180} pb={2}><Regulator/></Box>
-                    <ThemeToggle/>
+                    <HStack>
+                        <VStack>
+                            <Box pt={180} pb={2}><Regulator /></Box>
+                            <Box pb={2}><ThemeToggle /></Box>
+                        </VStack>
+                        <VStack pl={2}>
+                            <Box pt={10} pb={2}><Regulator /></Box>
+                            <Box pb={2}></Box>
+                            <Box pb={2}></Box>
+                            <Box pb={2}></Box>
+                        </VStack>
+                    </HStack>
                 </Box>
             </HStack>
             Banner

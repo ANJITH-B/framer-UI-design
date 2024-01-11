@@ -21,9 +21,9 @@ const Regulator = () => {
                             <SliderTrack bg="white.1">
                                 <SliderFilledTrack bg="white.1" />
                             </SliderTrack>
-                            <SliderThumb bg="white.1" boxSize={100} shadow={0} />
+                            <SliderThumb bg="white.1" boxSize={90} shadow={0} />
                         </Slider>
-                        <Text mt={16} fontSize='xl' textAlign="center">
+                        <Text mt={14} fontSize='xl' opacity={0.55} textAlign="center">
                             {brightness}%
                         </Text>
                         <Slider colorScheme='pink'  focusBorderColor="none"  onChange={handleSliderChange} aria-label='slider-ex-3' defaultValue={30} orientation='vertical' minH='10vw'>
