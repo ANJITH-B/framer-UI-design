@@ -1,12 +1,17 @@
-import { useColorMode, Button } from "@chakra-ui/react";
+import { useColorMode, IconButton } from "@chakra-ui/react";
+import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5';
 
-function ThemeToggle() {
+function ThemeBtn() {
   const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <Button onClick={toggleColorMode}>
-      Toggle {colorMode === "light" ? "Dark" : "Light"}
-    </Button>
+    <IconButton
+      onClick={toggleColorMode}
+      shadow={'0'}
+      aria-label="Toggle color mode"
+      icon={colorMode === "light" ? <IoMoonOutline /> : <IoSunnyOutline />}
+    />
   );
 }
 
-export default ThemeToggle;
+export default ThemeBtn;
