@@ -1,9 +1,10 @@
 import { Box, HStack, VStack } from '@chakra-ui/react'
 import React from 'react'
 import BannerLeft from '../components/banner/bannerLeft'
-import BannerRigh from '../components/banner/bannerRigh'
 import Regulator from '../components/banner/regulator'
 import ThemeToggle from '../components/banner/themeToggle'
+import CreditCard from '../components/banner/vcard'
+import Payment from '../components/banner/payment'
 
 const Banner = () => {
     return (
@@ -20,8 +21,8 @@ const Banner = () => {
                         </VStack>
                         <VStack pl={2}>
                             <Box pt={10} pb={2}><Regulator /></Box>
-                            <Box pb={2}></Box>
-                            <Box pb={2}></Box>
+                            <Box pb={2}><CreditCard/></Box>
+                            <Box pb={2}><Payment/></Box>
                             <Box pb={2}></Box>
                         </VStack>
                     </HStack>

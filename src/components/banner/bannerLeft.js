@@ -1,11 +1,13 @@
 import React from 'react'
-import {Box} from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 const BannerLeft = () => {
   return (
     <>
-    <Box>
-    BannerLeft
-        </Box></>
+      <Box>
+        <h1>Acmeflare</h1>
+        <h2></h2>
+        BannerLeft
+      </Box></>
   )
 }
 
