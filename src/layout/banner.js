@@ -5,6 +5,7 @@ import Regulator from '../components/banner/regulator'
 import ThemeToggle from '../components/banner/themeToggle'
 import CreditCard from '../components/banner/vcard'
 import Payment from '../components/banner/payment'
+import LeftBanner from '../components/banner/leftBanner'
 
 const Banner = () => {
     return (
@@ -12,6 +13,7 @@ const Banner = () => {
             <HStack gap={0}>
                 <Box w={'50vw'} h={'80vh'} >
                     <BannerLeft />
+                    <LeftBanner/>
                 </Box >
                 <Box w={'50vw'} h={'80vh'} m={0}>
                     <HStack>
